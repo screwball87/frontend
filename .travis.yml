@@ -6,4 +6,4 @@ before_install:
   - docker build -t screwball87/frontend-dev -f Dockerfile.dev .
 
 script:
-  - docker run -e CI=true USERNAME/docker-react npm run test
+  - docker run -e CI=true screwball87/frontend-dev npm run test
